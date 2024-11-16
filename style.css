@@ -1,0 +1,75 @@
+body {
+    background: linear-gradient(to right, #ffecd2, #fcb69f);
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+.container {
+    padding: 40px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+h2 {
+    color: #ff6f61;
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.alert {
+    background-color: #ffdddd;
+    color: #d8000c;
+    padding: 15px;
+    margin-bottom: 30px;
+    border: 1px solid #d8000c;
+    border-radius: 5px;
+    width: 90%;
+    margin: 0 auto;
+    font-size: 1.2em;
+}
+
+button {
+    background-color: #ff6f61;
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    border-radius: 25px;
+    cursor: pointer;
+    margin: 15px;
+    font-size: 1.2em;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #ff3b2f;
+}
+
+.image {
+    border-radius: 50%;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    margin-bottom: 20px;
+}
+
+.food-item, .movie-item {
+    display: inline-block;
+    margin: 20px;
+    padding: 15px;
+    cursor: pointer;
+    border-radius: 15px;
+    background: #fff;
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+    font-size: 1.2em;
+}
+
+.food-item:hover, .movie-item:hover {
+    transform: scale(1.1);
+}
+
+.food-item.selected, .movie-item.selected {
+    background-color: #ff6f61;
+    color: white;
+}

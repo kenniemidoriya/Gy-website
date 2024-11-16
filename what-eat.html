@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>What Do You Want to Eat?</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div id="alert" class="alert" style="display: none;">Please choose a food first. (Ｔ▽Ｔ)</div>
+        <section class="food">
+            <h2>What do you want to eat?</h2>
+            <div class="food-list">
+                <div class="food-item" onclick="selectFood(this)">Pancake</div>
+                <div class="food-item" onclick="selectFood(this)">Chicken</div>
+                <div class="food-item" onclick="selectFood(this)">Pizza</div>
+                <div class="food-item" onclick="selectFood(this)">Back Ribs</div>
+            </div>
+            <button class="continue-btn" onclick="goToPage('what-movie.html')">Continue</button>
+        </section>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
