@@ -15,18 +15,5 @@
         </section>
     </div>
     <script src="script.js"></script>
-    <script>
-        document.addEventListener('DOMContentLoaded', () => {
-            const selectedDate = localStorage.getItem('selectedDate');
-            const selectedFood = localStorage.getItem('selectedFood');
-            const summary = document.getElementById('summary');
-
-            if (selectedDate && selectedFood) {
-                summary.textContent = `Don't forget on ${selectedDate} with a delicious ${selectedFood}!`;
-            } else {
-                summary.textContent = 'Details not complete!';
-            }
-        });
-    </script>
 </body>
 </html>
